@@ -1,0 +1,215 @@
+1.
+INÍCIO
+	EXIBIR "CAIO"
+FIM
+
+2.
+INÍCIO
+	IDADE <-- 49
+FIM
+
+3.
+INÍCIO
+	EXIBIR "Qual é o seu nome?"
+	nomePessoa <-- RECEBER 
+	//nomePessoa <-- LEIA(nomePessoa)
+	
+	EXIBIR "Olá " + nomePessoa
+FIM
+
+/*
+Qual é o seu nome?
+Jão
+Olá Jão
+*/
+
+4.
+INÍCIO
+	EXIBIR "Inserir o primeiro número:"
+	n1 <-- RECEBER
+	EXIBIR "Inserir o segundo número:"
+	n2 <-- RECEBER
+	
+	//resultado <-- n1 + n2
+	//EXIBIR "A soma de " + n1 + " e " + n2 + " é igual a " + resultado
+	
+	EXIBIR (n1 + n2)
+FIM
+
+/*
+Inserir o primeiro número:
+45
+Inserir o segundo número:
+10
+A soma de 45+10 é igual a 55
+*/
+
+5.
+INÍCIO
+	anoAtual <-- 2023 [obter o ano atual da data de hoje do s.o.]
+	
+	EXIBIR "Qual o seu ano de nascimento?"
+	anoNasc <-- RECEBER
+	idade <-- anoAtual - anoNasc
+	EXIBIR "Você tem " + idade + " anos de idade."
+FIM
+
+/*
+Qual o seu ano de nascimento?
+1973
+Você tem 50 anos de idade.
+*/
+
+6.
+INÍCIO
+	EXIBIR "Inserir o primeiro número:"
+	n1 <-- RECEBER
+	EXIBIR "Inserir o segundo número:"
+	n2 <-- RECEBER
+	
+	SE n1 > n2 ENTÃO
+		maior <-- n1 + " é maior" 
+	SENÃO
+		SE n1 < n2 ENTÃO
+			maior <-- n2 + " é maior" 
+		SENÃO
+			maior <-- n1 + " e " + n2 + " são iguais" 
+	FIM-SE
+	
+	EXIBIR maior 
+FIM
+
+/*
+Inserir o primeiro número:
+15
+Inserir o segundo número:
+50
+50 é maior
+
+Inserir o primeiro número:
+50
+Inserir o segundo número:
+2
+50 é maior
+
+Inserir o primeiro número:
+5
+Inserir o segundo número:
+5
+5 e 5 são iguais
+
+
+SE (diaSemana = "dom") OU (diaSemana = "sab") ENTÃO
+	não vou trabalhar
+FIM-SE
+
+
+diaSemana	(diaSemana = "dom")	(diaSemana = "sab")	OU
+--
+ter			F					F					F
+sex			F					F					F
+sab			F					V					V
+dom			V 					F 					V
+
+
+SE (idade >= 18) E (genero = "M") ENTÃO
+	deve se alistar nas FAs
+SENÃO
+	não precisa se alistar nas FAs
+FIM-SE
+
+idade	genero	E
+15		M		F + V = F
+15		F		F + F = F
+18		M		V + V = V
+18		F		V + F = F
+20		M		V + V = V
+20		F		V + F = F
+
+
+SE NÃO(sinal = "verde") ENTÃO
+	aguarde
+FIM-SE
+
+SE sinal = "vermelho" ENTÃO
+	aguarde
+FIM-SE
+
+SE sinal = "verde" ENTÃO
+	pode passar
+SENÃO
+	aguarde
+FIM-SE
+
+sinal		NÃO(sinal = "verde") 
+verde		NÃO(V) = F
+vermelho	NÃO(F) = V
+*/
+
+7.
+INÍCIO
+	EXIBIR "Em que ano você nasceu?"
+	anoNascimento <-- RECEBER
+	idade <-- 2023 - anoNascimento
+
+	SE idade >= 65 ENTÃO
+		EXIBIR "Geração Silenciosa"
+	SENÃO
+		SE idade >= 50 E idade < 65 ENTÃO
+			EXIBIR "Baby boommer"
+		SENÃO
+			SE idade >= 35 E idade < 50 ENTÃO
+				EXIBIR "Geração X"
+			SENÃO
+				SE idade >= 21 E idade < 35 ENTÃO
+					EXIBIR "Geração Y"
+				SENÃO
+					SE idade >= 15 E idade < 21 ENTÃO
+						EXIBIR "Geração Z"
+					SENÃO
+						EXIBIR "Não sei"
+					FIM-SE
+				FIM-SE
+			FIM-SE
+		FIM-SE
+	FIM-SE
+FIM
+
+/*
+Em que ano você nasceu?
+1973
+Baby boommer
+
+
+Em que ano você nasceu?
+5000
+Não sei
+*/
+
+8.
+INÍCIO
+	PARA V = 1 até 100 FAÇA
+		EXIBIR V
+	FIM-PARA
+FIM
+
+/*
+for(int i=0; i<100; i++)
+{
+
+}
+
+for(int i=1; i<=list.count(); i++)
+{
+
+}
+
+foreach(var v in list)
+{
+
+}
+*/
+
+
+
+

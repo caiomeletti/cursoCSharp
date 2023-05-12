@@ -1,0 +1,70 @@
+Lógica de Programação – Vetores – Definição e Declaração
+---
+
+Arrays – Introdução
+
+Um array é uma estrutura de dados homogênea que mantém uma série de elementos de dados de mesmo tipo. Pode-se acessar os elementos individuais armazenados no array por meio de uma posição de índice associada, geralmente numérica.
+
+Geralmente tem tamanho fixo.
+
+
+Classificação 
+
+- Unidimensional: Vetor
+- Bidimensional: Matriz
+- Tridimensional: Cubo
+
+
+Vetores
+
+       Notas
++-+	+-+	+-+	+-+	+-+
+| |	| |	| |	| |	| |
++-+	+-+	+-+	+-+	+-+
+
+[0]	[1]	[2]	[3]	[4]	<-- posições de índice
+
+
+Declaração de vetores
+
+	nomeVetor: vetor [i..f] de Tipo_Dados
+
+Onde:
+
+. nomeVetor é o nome escolhido para o vetor, que deve seguir as regras de nomeação de variáveis.
+. i = Valor da primeira posição do vetor (preferencialmente zero)
+. F = Valor da última posição do vetor (tamanho do vetor – 1)
+. Tipo_Dados = tipo dos dados que serão armazenados nas posições do vetor
+
+Exemplo:
+
+	notas : vetor [0..9] de real
+	
+
+Atribuição de Valores e leitura de dados em Vetores
+
+	notas[0] <-- 7.5
+
+
+Como usar os dados armazenados em um vetor
+
+	inicio
+		minhanota : real
+		notas : vetor [0..9] de real
+
+		exibir "Digite uma nota:"
+		notas[0] <-- receber
+		minhanota <- notas[0]
+		
+		Exibir minhanota
+		Exibir notas[0]
+	fim
+	
+
+Criar algoritmos usando pseudocódigo (português estruturado):
+
+1. Receber as 4 notas do aluno
+	Armezenar na variável 'soma' a soma de todas as quatro notas
+	Exibir a média das 4 notas
+	Exibir as 4 notas do aluno
+	

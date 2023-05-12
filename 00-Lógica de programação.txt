@@ -1,0 +1,62 @@
+Lógica de programação
+---
+
+Criar algoritmos usando pseudocódigo (português estruturado):
+
+INÍCIO
+FIM
+EXIBIR
+RECEBER
+<-- (ATRIBUIÇÃO)
+SE
+FAÇA-ENQUANTO / ENQUANTO
+PARA
+
+1 - Exibir uma cadeia de caracteres com o seu nome na tela.
+
+2 - Criar uma variável de nome 'idade' e atribuir o valor da sua idade.
+
+3 - Exibir a literal "Qual é o seu nome?" 
+	- em seguida receber em uma variável o nome que for digitado 
+	- e depois exibir a mensagem "Olá " seguida do nome que foi recebido.
+
+4 – Exibir a mensagem "Inserir o primeiro número:"
+	- Receber em uma variável o primeiro número
+	– Exibir a mensagem "Inserir o segundo número:"
+	– Receber em uma outra variável o segundo número
+	– Somar os dois valores
+	– Exibir o resultado
+
+5 - Exibir a mensagem "Qual o seu ano de nascimento?"
+	- Receber em uma variável o valor do ano de nascimento
+	- Atribuir em uma nova variável de nome "idade" a subtração do ano atual e o ano que foi recebido
+	- Exibir a mensagem: "Você tem <idade> anos de idade." concatenando o valor da variável "idade"
+
+6 – Receber dois números (cada um em uma variável)
+	– Se o primeiro número for maior que o segundo número, então atribuir a variável "maior" o valor do primeiro número
+	- Senão atribuir a variável "maior" o valor do segundo número
+	- Exibir o valor da variável maior + " é maior" 
+
+7 - Exibir a mensagem "Em que ano você nasceu?"
+	- Receber na variável "anoNascimento" o valor do ano de nascimento
+	- Atribuir em uma nova variável de nome "idade" a subtração do ano atual e o ano que foi recebido
+	- Se o valor da idade for maior ou igual a 65, então exibir "Geração Silenciosa"
+	- Se o valor da idade for maior ou igual a 50 e menor que 65, então exibir "Baby boommer"
+	- Se o valor da idade for maior ou igual a 35 e menor que 50, então exibir "Geração X"
+	- Se o valor da idade for maior ou igual a 21 e menor que 35, então exibir "Geração Y"
+	- Se o valor da idade for maior ou igual a 15 e menor que 21, então exibir "Geração Z"
+	- Senão exibir "Não sei"
+
+8 - Exibir os números de 1 a 100 utilizando o controle PARA (FOR):
+
+	PARA V de ValorInicial até ValorFinal FAÇA
+		[comandos]
+	FIM-PARA
+	
+9 – Receber um número em uma variável
+	- Exibir os 50 números seguintes ao número recebido
+	
+10 - Exibir a mensagem "Digite um número de 1 a 10"
+	- Receber em uma variável o valor do número
+	- Enquanto o número for menor que 1 ou o número for maior que 10, exibir novamente a mensagem e receber novamente o número
+	- Exibir a mensagem "O número <num> está dentro do limite válido.", concatenando o número dentro da mensagem.
