@@ -20,10 +20,13 @@
             if (int.TryParse(numString, out numB))
                 parseOK = true;
             else
+            {
                 parseOK = false;
+                Console.WriteLine("O número inserido é inválido!");
+            }
 
         } while (!parseOK);
 
-        Console.WriteLine(numA + numB);
+        Console.WriteLine("A soma do números é " + (numA + numB));
     }
 }
