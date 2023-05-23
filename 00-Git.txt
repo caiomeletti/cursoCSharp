@@ -1,0 +1,9 @@
+GIT
+---
+
+git add 	--> adicionar na preparação
+git commit 	--> confirmar os arquivos da preparação
+
+git fetch	--> descobre as alterações que estão disponíveis na branch remota
+git pull	--> atualizar a branch local com as alterações da branch remota
+git push	--> to publish your local commits
