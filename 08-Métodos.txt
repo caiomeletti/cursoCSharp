@@ -1,0 +1,78 @@
+Corpo do método e variáveis locais
+---
+Um corpo de método pode declarar variáveis que são específicas para a invocação do método. 
+Essas variáveis são chamadas de variáveis locais. 
+Uma declaração de variável local especifica um nome de tipo, um nome de variável e, possivelmente, um valor inicial.
+
+
+	class Squares
+	{
+		public static void WriteSquares()
+		{
+			int i = 0;
+			int j;
+			while (i < 10)
+			{
+				j = i * i;
+				Console.WriteLine($"{i} x {i} = {j}");
+				i++;
+			}
+		}
+	}
+	
+	
+
+* Criar um Console App para simular uma calculadora com quatro operações recebendo dois números inteiros.
+
+
+
+Métodos estáticos e de instância
+---
+Um método declarado com um modificador static é um método estático. 
+Um método estático não funciona em uma instância específica e pode acessar diretamente apenas membros estáticos.
+
+Um método declarado sem o modificador static é um método de instância. 
+Um método de instância opera em uma instância específica e pode acessar membros estáticos e de instância.
+
+
+	class Entidade
+	{
+		static int numSerial_estatico;
+		int numSerial;
+
+		public Entidade()
+		{
+			//numSerial = numSerial_estatico++;
+			numSerial = numSerial_estatico;
+			numSerial_estatico++;
+		}
+
+		public int ObterNumSerial()
+		{
+			return numSerial;
+		}
+
+		public static int ObterProximoNumSerial()
+		{
+			return numSerial_estatico;
+		}
+
+		public static void AtribuirProximoNumSerial(int value)
+		{
+			numSerial_estatico = value;
+		}
+	}
+
+	class Program
+	{
+		static void Main()
+		{
+			Entidade.AtribuirProximoNumSerial(1000);
+			Entidade e1 = new();
+			Entidade e2 = new();
+			Console.WriteLine(e1.ObterNumSerial());          //  "1000"
+			Console.WriteLine(e2.ObterNumSerial());          //  "1001"
+			Console.WriteLine(Entidade.ObterProximoNumSerial());  //  "1002"
+		}
+	}
+	

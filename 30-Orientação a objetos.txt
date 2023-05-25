@@ -1,0 +1,33 @@
+Orientação a objetos em C#
+---
+
+Com esta forma de desenvolver software, podemos construir sistemas compostos por vários objetos, cada um com seu objetivo mantendo a coesão cada um tendo uma responsabilidade específica.
+
+Com esta técnica podemos também manter a segurança sem a necessidade de ter todos os atributos públicos e sendo possível encapsular seus atributos por modificadores de acesso.
+
+A orientação a objetos também conhecida como POO (ou OOP - Object Oriented Programming) é baseada nos seguintes pontos:
+
+
+Princípios
+---
+
+Encapsulamento – É o isolamento de elementos do objeto “métodos e atributos” conforme o acesso a ser implementado, pois nem todo método ou atributo deve ser visível de forma publica. Quando criamos um objeto, alguns elementos são de uso particular, enquanto outros são de uso de seus descendentes e ainda temos o uso por seus associados.
+
+Abstração – É a forma de extrair os pontos mais relevantes do domínio da aplicação de um sistema e abstrair os pontos menos relevantes. Uma classe de forma simples é a abstração de coisas do mundo real.
+
+Polimorfismo –  Capacidade de transformação e adaptação. Ou seja, é a capacidade de adaptar o comportamento existente em um método herdado.
+
+Herança – Capacidade de herdar métodos e atributos de um objeto pai, como nos seres vivos.
+
+
+Conceitos
+---
+
+Classe – E uma representação do que é necessário ter ou fazer em um sistema. Podemos determinar seu estado, o que será armazenado e qual comportamento serão executados. Nada mais é do que uma estrutura de um ou vários objetos.
+
+Objeto – É uma instancia de uma classe, ou seja, uma cópia em memoria de tudo que ela representa e pode fazer.
+
+Atributo – É o estado do objeto, onde armazenamos dados para sua representação.
+
+Método – São operações pertencentes ao objeto.
+

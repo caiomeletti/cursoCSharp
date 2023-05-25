@@ -1,0 +1,60 @@
+Tipos e variáveis
+---
+
+Tipos de valor
+	
+	Tipos simples
+		Integral com sinal:
+			sbyte
+			short
+			int
+			long
+			
+		Integral sem sinal: 
+			byte
+			ushort
+			uint
+			ulong
+			
+		Caracteres Unicode: 
+			char (que representa uma unidade de código UTF-16)
+			
+		Ponto flutuante binário de IEEE: 
+			float
+			double
+			
+		Ponto flutuante decimal de alta precisão: 
+			decimal
+			
+		Booliano: 
+			bool (que representa valores boolianos — valores que são true ou false)
+			
+Tipos enum
+	Tipos definidos pelo usuário do formulário enum E {...}. 
+	
+Tipos struct
+	Tipos definidos pelo usuário do formulário struct S {...}
+	
+Tipos de valor anuláveis
+	Extensões de todos os outros tipos de valor com um valor null
+	
+Tipos de valor de tupla
+	Tipos definidos pelo usuário do formulário (T1, T2, ...)
+	
+Tipos de referência
+	Tipos de Classe
+		Classe base definitiva de todos os outros tipos: object
+		Cadeias de caracteres Unicode: string, que representa uma sequência de unidades de código UTF-16
+		Tipos definidos pelo usuário do formulário class C {...}
+	
+	Tipos de interface
+		Tipos definidos pelo usuário do formulário interface I {...}
+		
+	Tipos de matriz
+		Unidimensional
+		multidimensional 
+		irregular. Por exemplo: int[], int[,] e int[][]
+		
+	Tipos delegados
+		Tipos definidos pelo usuário do formulário delegate int D(...)
+

@@ -1,0 +1,85 @@
+Acessibilidade
+---
+Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro. Existem seis formas possíveis de acessibilidade. Os modificadores de acesso são resumidos abaixo.
+
+- public
+	acesso ilimitado.
+	
+- private
+	acesso limitado a essa classe.
+
+- protected
+	acesso limitado a essa classe ou a classes derivadas dessa classe.
+
+- internal
+	acesso limitado ao assembly atual (.exe ou .dll).
+
+- protected internal
+	acesso limitado a essa classe, a classes derivadas dessa classe ou a classes dentro do mesmo assembly.
+
+- private protected
+	acesso limitado a essa classe ou a classes derivadas desse tipo dentro do mesmo assembly.
+
+
+Campos
+---
+Um campo é uma variável que está associada a uma classe ou a uma instância de uma classe
+
+
+Métodos
+---
+Um método é um membro que implementa um cálculo ou uma ação que pode ser executada por um objeto ou classe. 
+Os métodos estáticos são acessados pela classe. 
+Os métodos de instância são acessados pelas instâncias da classe.
+
+	
+	public override string ToString()
+	{
+		"This is an object";
+	}
+	
+	
+Parâmetros
+---
+Os parâmetros são usados para passar valores ou referências de variável aos métodos. 
+Os parâmetros de um método obtêm seus valores reais de argumentos que são especificados quando o método é invocado. 
+Há quatro tipos de parâmetros: parâmetros de valor, parâmetros de referência, parâmetros de saída e matrizes de parâmetros.
+
+
+- parâmetros de valor - As modificações em um parâmetro de valor não afetam o argumento passado para o parâmetro
+
+	static int Dobro(int n)
+	{
+		return n * 2;
+	}
+	...
+	int num = 3;
+	Console.WriteLine($"O dobro de {num} é {Dobro(num)}"); // "O dobro de 3 é 6"
+		
+	
+- parâmetros de referência - Durante a execução do método, o parâmetro de referência representa o mesmo local de armazenamento que a variável de argumento
+
+	static void Produto(int fator1, int fator2, ref int resultado)
+	{
+		resultado = fator1 * fator2;
+	}
+	...
+	int resultado = 0;
+	Produto(2, 3, resultado);
+	Console.WriteLine($"O produto de {fator1} por {fator2} é {resultado}"); // "O produto de 2 por 3 é 6"
+	
+	
+- parâmetro de saída - usado para passar argumentos por referência, não requer que seja atribuído explicitamente um valor ao argumento fornecido pelo chamador
+
+	static void Divisao(int x, int y, out int quociente, out int resto)
+	{
+		quociente = x / y;
+		resto = x % y;
+	}
+	...
+	Divide(10, 3, out int quo, out int rem);
+    Console.WriteLine($"{quo} {rem}");	// "3 1"
+	
+	
+- matriz de parâmetros - permite que um número variável de argumentos sejam passados para um método
+
